@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="nouveau.css" />
+  </head>
+
+  <body>
+    <!-- Titres -->
+
+    <h1 style="text-align: center">Nouveau Détenu</h1>
+    <h2 style="text-align: center">*Champs obligatoires</h2>
+
+    <div class="inscri">
+      <!-- Formulaire -->
+      <form action="" method="post" enctype="multipart/form-data">
+        <!-- Nom -->
+        <label for="nom">Nom de Famille*:</label> <br />
+        <input type="text" placeholder="Nom de famille" required /> <br /><br />
+
+        <!-- Prénom -->
+        <label for="prénom">Prénom*:</label> <br />
+        <input type="text" placeholder="Prénom" required /> <br /><br />
+
+        <!-- Ville -->
+        <label for="Ville">Selectionner la ville :</label> <br />
+        <select id="ville" name="ville">
+          <option value="">Veuillez Séléctionner</option>
+          <option value="Lille">Lille</option>
+          <option value="Paris">Paris</option>
+          <option value="Bordeaux">Bordeaux</option>
+          <option value="Marseille">Marseille</option>
+          <option value="Nantes">Nantes</option>
+          <option value="Lyon">Lyon</option>
+          <option value="La Rochelle">La Rochelle</option>
+          <option value="Poitiers">Poitiers</option>
+          <option value="Toulouse">Toulouse</option>
+        </select>
+        <br />
+        <br />
+
+        <!-- Date -->
+        <label for="date">Date d'arrivée:</label> <br />
+        <input type="date" name="date" id="date" /><br /><br />
+
+        <!-- Nombre de personnes -->
+        <label for="nb">Nombre de personne(s)*:</label> <br />
+        <input
+          type="number"
+          name="nb"
+          id="nb"
+          min="0"
+          max="100"
+          value="1"
+          required
+        />
+        <br /><br />
+
+        <!-- Les options -->
+        <label for="choix">Choix de la mort:</label> <br />
+        <input type="checkbox" id="Clim" name="choix" value="Clim" />
+        <label for="Climatisation">Chaise Electrique</label> <br />
+        <input type="checkbox" id="Bar" name="choix" value="Bar" />
+        <label for="Mini bar">Mangé par les corbeaux vivant</label> <br />
+        <input type="checkbox" id="Jacuzzi" name="choix" value="Jacuzzi" />
+        <label for="Jacuzzi">Désintégré par un Mooncake</label> <br />
+        <br />
+
+        <!-- Commentaires -->
+        <textarea name="message" id="message" rows="2" cols="20">
+Info sur le détenu.</textarea
+        >
+        <br />
+
+        <!-- Conditions Générales -->
+        <label for="cgv"
+          >Acceptation des Conditions Générales d'emprisonnement (CGV)*:</label
+        >
+        <br />
+        <input
+          type="radio"
+          id="J'accepte"
+          name="cgv"
+          value="J'accepte"
+          checked
+        />
+        <label for="oui">J'accepte</label>
+        <input type="radio" id="Je refuse" name="cgv" value="Je refuse" />
+        <label for="non">Je refuse</label> <br />
+        <br />
+
+        <!-- Boutons -->
+        <input type="submit" value="Envoyer la demande" />
+        <input type="reset" value="Réinitialiser le formulaire" />
+      </form>
+    </div>
+  </body>
+</html>

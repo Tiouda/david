@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@200&display=swap");
+@import url("http://fonts.cdnfonts.com/css/western");
+
+body {
+  background-image: url(img/texture.jpeg);
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  width: 30.2%;
+  background-image: url(img/parchemin.png);
+  background-size: 430px;
+  height: 630px;
+}
+
+h1 {
+  font-family: "Western", sans-serif;
+}
+
+.carte1 h1 {
+  font-size: 43px;
+  font-family: "Western", sans-serif;
+  color: red;
+  text-align: center;
+}
+
+.carte1 img {
+  width: 80px;
+}
+
+.premiere {
+  display: flex;
+  justify-content: center;
+}
+
+.premiere img {
+  border-radius: 50%;
+}
+
+.carte2 .premiere img {
+  width: 100px;
+}
+
+.carte2 .portrait img {
+  width: 90px;
+}
+
+.nom {
+  display: flex;
+  justify-content: center;
+  font-family: "Martel", serif;
+  font-style: italic;
+}
+
+.recompense {
+  font-stretch: ultra-expanded;
+  font-weight: 900;
+  font-style: italic;
+  color: red;
+  text-align: center;
+}
+
+.complice {
+  text-align: center;
+  font-style: italic;
+}
+
+.portrait {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.portrait img {
+  border-radius: 50%;
+}
+
+.portraitnom {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -5%;
+  font-style: italic;
+  font-stretch: expanded;
+  padding-right: 10px;
+}
+
+.carte3 .portraitnom {
+  padding-left: 20px;
+}
+
+.carte3 .portrait img:last-child {
+  width: 90px;
+}
+
+.capture {
+  text-align: center;
+}
+
+.carte2 h1 {
+  text-align: center;
+  font-size: 43px;
+}
+
+.carte3 h1 {
+  text-align: center;
+  font-size: 43px;
+}
+
+.carte3 .portrait img {
+  width: 70px;
+  margin-top: -20px;
+}
+
+h2 {
+  text-align: center;
+  font-style: italic;
+  margin-top: -1%;
+}
+
+p {
+  padding-left: 15px;
+}
+
+ul {
+  list-style: none;
+  font-style: italic;
+}

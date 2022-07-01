@@ -1,0 +1,17 @@
+body{
+    background-image: url(img/texture.jpeg);
+}
+
+.inscri{
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    width: fit-content;
+    padding: 2%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+textarea{
+    resize: none;
+}
