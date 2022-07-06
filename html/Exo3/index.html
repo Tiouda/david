@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Formulaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+
+
+
+    <!-- Titres -->
+    <div class="tout">
+    <h1 style="text-align:center;">Votre réservation de véhicules</h1>
+    <h2 style="text-align: center;">*Champs obligatoires</h2>
+    
+    <!-- Véhicules -->
+    <label for="Véhicules">Selectionner un véhicule :</label>
+    <select id="Véhicules" name="Véhicules">
+    <option value="">Veuillez Séléctionner</option>
+    <option value="Citadine">Citadine</option>
+    <option value="Utilitaire">Véhicule utilitaire</option>
+    <option value="Moto">Moto</option>
+    <option value="Vélo">Vélo</option>
+    <option value="Collection">Voiture de collection</option>
+    </select> <br/> <br/>
+
+    <!-- Formulaire -->
+    <form action="" method="post" enctype="multipart/form-data">
+    
+    <!-- Nom -->
+    <label for="nom">Votre nom*:</label> <br/>
+    <input type="text" placeholder="Nom de famille" required> <br/><br/>
+    
+    <!-- Prénom -->
+    <label for="prénom">Votre prénom*:</label> <br/>
+    <input type="text" placeholder="Prénom" required> <br/><br/>
+
+    <!-- E-mail -->
+     <label for="mail">Votre adresse e-mail*:</label> <br/>
+     <input type="email" name="mail" id="mail" placeholder="Adresse e-mail"required> <br/><br/>
+     
+    <!-- Date -->
+    <label for="date">Date de réservation:</label> <br/>
+    <input type="date" name="date" id="date"><br/><br/>
+    
+    <!-- Les options -->
+    <label for="choix">Vos options:</label> <br/>
+    <input type="checkbox" id="Clim" name="choix" value="Clim">
+    <label for="Climatisation"> Climatisation</label>
+    <input type="checkbox" id="Aide" name="choix" value="Aide">
+    <label for="Aide">Aide au freinage d'urgence</label>
+    <input type="checkbox" id="Energie" name="choix" value="Energie">
+    <label for="Energie"> Energie électrique</label> <br/> <br/>
+    
+    <!-- Commentaires -->
+    <textarea name="message" id="message" rows="2" cols="20">Ajouter un commentaire.</textarea> <br/>
+    
+    <!-- Conditions Générales -->
+    <label for="cgv">Acceptation des Conditions Générales de Vente <a href="cgv.html">(CGV)*:</a></label> <br/>
+    <input type="radio" id="J'accepte" name="cgv" value="J'accepte"checked>
+    <label for="oui">J'accepte</label>
+    <input type="radio" id="Je refuse" name="cgv" value="Je refuse">
+    <label for="non">Je refuse</label> <br/> <br/>
+    
+    <!-- Boutons -->
+    <input type="submit" value="Envoyer ma demande">
+    <input type="reset" value="Réinitialiser le formulaire">
+    
+    </form>
+</div>
+    </body>
+    </html>
+
